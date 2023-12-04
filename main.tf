@@ -26,6 +26,8 @@ resource "aws_instance" "app_server" {
 
 terraform {
   backend "s3" {
+    access_key="AKIAYF7VJFYGRYDKOYGJ"
+    secret_key="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"
     bucket = "terraformsf"
     key    = "terraform.tfstate"
     region = "us-west-2"
